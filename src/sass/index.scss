@@ -1,0 +1,19 @@
+//                                  *base
+@import './base/normalize';
+@import './base/common';
+@import './base/reser';
+
+//                                  *components
+@import './components/logo';
+@import './components/btn_header';
+@import './components/modal';
+@import './components/slider';
+
+//                                  *layouts
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/footer';
+
+//                                  *utils
+@import './utils/hidden';
+@import './utils/variables';
