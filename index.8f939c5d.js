@@ -1,2 +1,0 @@
-const e=document.querySelector(".modal"),t=document.querySelector(".btn--header"),n=document.querySelector(".modal__close-btn");t.addEventListener("click",(function(){e.classList.add("modal--open")})),n.addEventListener("click",(function(){e.classList.remove("modal--open")}));new Swiper(".swiper",{direction:"horizontal",navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
-//# sourceMappingURL=index.8f939c5d.js.map

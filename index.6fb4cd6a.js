@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".modal"),n=document.querySelector(".btn--header"),t=document.querySelector(".modal__close-btn");n.addEventListener("click",(function(){e.classList.add("modal--open")})),t.addEventListener("click",(function(){e.classList.remove("modal--open")}));new Swiper(".swiper",{direction:"horizontal",navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}();
-//# sourceMappingURL=index.6fb4cd6a.js.map
