@@ -1,13 +1,17 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.03em;
   width: 100%;
+  background-image: url(..//images/text.webp);
 }
 .link {
   text-decoration: none;

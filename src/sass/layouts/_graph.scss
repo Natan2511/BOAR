@@ -1,0 +1,54 @@
+.graph {
+  text-transform: uppercase;
+  text-align: left;
+}
+.graph__wrapper {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 380px;
+  padding-right: 380px;
+}
+.graph__wrapper > h2 {
+  font-family: 'Oswald';
+  font-size: 35px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.graph__times > svg {
+  opacity: 0.4;
+}
+.graph__times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.graph__wrapper > hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.graph__list {
+  display: flex;
+}
+.graph__item {
+  color: #a1a1a1;
+  display: inline-block;
+  border-right: 1px solid #eee;
+  font: 400 14px Oswald;
+  padding: 0 10px;
+  max-width: 108px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0px;
+}
+.graph__item > b {
+  font-weight: 600;
+  font-family: 'Oswald';
+  font-size: 25px;
+  color: #000000;
+}
+.graph__item__border {
+  border: 0;
+}

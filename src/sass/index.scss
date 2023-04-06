@@ -8,11 +8,19 @@
 @import './components/btn_header';
 @import './components/modal';
 @import './components/slider';
+@import './components/btn_swiper';
 
 //                                  *layouts
 @import './layouts/header';
-@import './layouts/main';
 @import './layouts/footer';
+@import './layouts/about-company';
+@import './layouts/blog';
+@import './layouts/classes';
+@import './layouts/gallery';
+@import './layouts/graph';
+@import './layouts/location';
+@import './layouts/our-prices';
+@import './layouts/schedule';
 
 //                                  *utils
 @import './utils/hidden';
