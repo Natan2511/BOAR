@@ -22,7 +22,6 @@
     <!-- *                       header                            -->
     <header class="header">
       <div class="header--container">
-        <!-- *                       logo and lang                        -->
         <section class="logo__container">
           <a href="index.html" class="logo">
             <img
@@ -41,7 +40,6 @@
           </button>
         </section>
 
-        <!-- *                       menu open                            -->
         <section>
           <button type="button" class="btn--header" data-modal-open>
             <svg width="25" height="28" fill="gray">
@@ -53,43 +51,11 @@
     </header>
 
     <!-- *                       main                              -->
-    <main class="main">
-      <section class="swiper__up">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                width="100%"
-                height="880px"
-                src="./images/bgOne.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                width="100%"
-                height="880px"
-                src="./images/bgOne.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                width="100%"
-                height="880px"
-                src="./images/bgOne.jpg"
-                alt=""
-              />
-            </div>
-            ...
-          </div>
-          <div class="swiper-button-prev button-rev"></div>
-          <div class="swiper-button-next button-next"></div>
-        </div>
-      </section>
+    <main>
+      <section></section>
 
       <section class="graph">
-        <div class="graph__wrapper">
+        <div class="graph__wrapper container">
           <h2>РАБОЧИЕ ЧАСЫ</h2>
           <hr />
           <div class="graph__times">
@@ -112,39 +78,45 @@
         </div>
       </section>
 
-      <section class="about-company">
-        <div class="about__wrapper">
-          <h1>BOAR TEAM - КЛУБ БОКСА В КИЕВЕ</h1>
+      <section class="about-company" id="about">
+        <div class="about__wrapper container">
+          <h1>BOAR TEAM - КЛУБ Кикбоксинга в Харькове</h1>
           <h2>Легальное оружие в твоих руках</h2>
           <hr />
           <ul class="about__list">
-            Посетите бесплатное ознакомительное занятие, чтобы почувствовать,
-            почему в наш клуб хочется возвращаться вновь и вновь:
+            <p style="margin-bottom: 10px;">
+              Посетите бесплатное ознакомительное занятие, чтобы почувствовать,
+              почему в наш клуб хочется возвращаться вновь и вновь:
+            </p>
             <li>В cтильном современном зале с новым оборудованием царит драйвовая и динамичная атмосфера</li>
             <li>Классные профессиональные тренеры предлагают интересные и эффективные программы</li>
             <li>После занятий приятно смыть усталость в удобных душевых</li>
             <li>Благодаря гибкому графику найдется время на очередной визит в клуб ради заряда позитива и энергии</li>
             <li>В широком выборе абонементов вы непременно подыщете вариант под собственный бюджет</li>
           </ul>
-          <p><a href="">Посмотрите на карту<a > – мы совсем рядом! Есть вопросы, как добраться в Risen Team? <a href="">Администратор охотно подскажет<a > удобный маршрут.</p>
+          <p><a class="about-link" href="#location">Посмотрите на карту<a > – мы совсем рядом! Есть вопросы, как добраться в Risen Team? <a class="about-link" href="">Администратор охотно подскажет<a > удобный маршрут.</p>
         </div>
       </section>
 
-      <section class="our-prices"></section>
+      <section class="our-prices" id="our-prices">
+        <div class="container">
+          <h2>Наши цены</h2>
+        </div>
+      </section>
 
-      <section class="about-company"></section>
+      <section class="about-company" id="about-company"></section>
 
-      <section class="gallery"></section>
+      <section class="gallery" id="gallery"></section>
 
-      <section class="classes"></section>
+      <section class="classes" id="classes"></section>
 
-      <section class="blog"></section>
+      <section class="blog" id="blog"></section>
 
-      <section class="about-company"></section>
+      <section class="about-company" id="about-company"></section>
 
-      <section class="location"></section>
+      <section class="location" id="location"></section>
 
-      <section class="schedule"></section>
+      <section class="schedule" id="schedule"></section>
     </main>
 
     <!-- *                       footer                            -->
@@ -156,11 +128,11 @@
     <div class="modal is is-hidden" data-modal>
       <div class="modal__content">
         <ul class="modal__list">
-          <li><a href="">About club</a></li>
-          <li><a href="">наши цены</a></li>
-          <li><a href="">Тренировки</a></li>
-          <li><a href="">фотогалерея</a></li>
-          <li><a href="">контакты</a></li>
+          <li><a href="#about">About club</a></li>
+          <li><a href="#">наши цены</a></li>
+          <li><a href="#">Тренировки</a></li>
+          <li><a href="#">фотогалерея</a></li>
+          <li><a href="#">контакты</a></li>
         </ul>
         <button
           class="modal__close-btn"

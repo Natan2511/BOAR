@@ -1,6 +1,13 @@
 .about-company {
+  width: 100%;
+  background: url(..//images/2196236.jpg) no-repeat;
+  text-align: center;
+  color: white;
+  // filter: blur(5px);
 }
 .about__wrapper {
+  padding-top: 67px;
+  padding-bottom: 43px;
 }
 .about__wrapper > h1 {
   font-family: 'Oswald', sans-serif;
@@ -18,6 +25,25 @@
   font-family: 'Open Sans', sans-serif;
 }
 .about__wrapper > hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.about-link {
+  color: red;
+  text-decoration: underline;
 }
 .about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: disc;
+}
+.about__list > li {
+  list-style: inside;
+}
+
+.about__list > li::marker {
+  display: flex;
 }
