@@ -269,10 +269,20 @@
     </div>
 
     <!-- *                       modal                             -->
-    <div class="modal--one">
-      <div class="modal__content--one">
-        <button class="modal__close--one">&times;</button>
-        <p>Текст модального окна</p>
+    <div class="call--modal">
+      <div class="call--modal__content">
+        <p>Наш телефоны</p>
+        <a class="call--modal--tel" href="tel:00990990000">00990990000</a>
+        <hr>
+        <p style="color:#f09898; font-size: 15px; text-align: center;">Первая тренировка - бесплатно!</p>
+        <hr>
+        <form class="call--modal__form" action="">
+          <p>Обратная связь</p>
+          <input class="call--modal__form--input" type="text" name="name" maxlength="32" minlength="3" placeholder="Ваше Имя">
+          <input class="call--modal__form--input" type="tel" name="phone" value="  +380" maxlength="19" required="" minlength="19" placeholder="Укажите ваш телефон">
+        </form>
+        <button class="call--btn__send">Перезвоните мне</button>
+        <button class="call--modal__close">&times;</button>
       </div>
     </div>
     
