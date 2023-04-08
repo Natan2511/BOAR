@@ -63,7 +63,7 @@
   height: 300px;
   padding: 80px;
   position: relative;
-  opacity: 0;
+  // opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
