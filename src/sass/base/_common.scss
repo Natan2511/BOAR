@@ -2,17 +2,19 @@
 
 body {
   color: black;
-  font: 400 14px/26px 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
   font-style: normal;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   letter-spacing: 0.03em;
   width: 100%;
-  background-image: url(..//images/text.webp);
-  background: no-repeat;
-  min-height: 100%;
   height: 100%;
+  background: url(..//images/text.png);
+  background-size: cover;
 }
 html {
   min-height: 100%;

@@ -1,0 +1,92 @@
+.our-prices {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.prices-wrapper > h2 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -1px;
+  margin-bottom: 100px;
+}
+
+.prices-list {
+  margin-top: -50px;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.prices-list__item:after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  border-radius: 30px;
+}
+.prices-list__item::before {
+  width: 97%;
+  height: 97%;
+  content: '';
+  z-index: 3;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  position: absolute;
+  inset: 5px 5px;
+}
+.prices-list__item {
+  background-image: url(..//images/50__dark-stone-500x500.png);
+  padding: 66px;
+  // margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  transform: scale(0.725) rotate(45deg);
+  color: #fff;
+  font: 18px/28px Open Sans;
+  transition: all 0.3s;
+  display: flex;
+  display: -webkit-flex;
+  width: 300px;
+  height: 300px;
+  padding: 80px;
+}
+.prices-list__item--content > em {
+  color: #fff;
+  height: 75px;
+  font: 150px / 20px Oswald, Helvetica;
+}
+.prices-list__item--content > span {
+  color: #a1a1a1;
+  font-size: 25px;
+  display: block;
+  margin-top: 15px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.prices-list__item--content > b {
+  color: #a1a1a1;
+  font-size: 30px;
+}
+.prices-list__item--content {
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.725) rotate(315deg);
+  align-items: center;
+}
