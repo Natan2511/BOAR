@@ -15,6 +15,7 @@ body {
   height: 100%;
   background: url(..//images/text.png);
   background-size: cover;
+  overflow-x: hidden;
 }
 html {
   min-height: 100%;
@@ -27,4 +28,11 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
+}
+hr {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
 }

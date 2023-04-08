@@ -49,44 +49,44 @@
 }
 .prices-list__item {
   background-image: url(..//images/50__dark-stone-500x500.png);
-  padding: 66px;
+  padding: 75px;
   // margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 30px;
-  transform: scale(0.725) rotate(45deg);
   color: #fff;
   font: 18px/28px Open Sans;
-  transition: all 0.3s;
   display: flex;
   display: -webkit-flex;
   width: 300px;
   height: 300px;
   padding: 80px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 .prices-list__item--content > em {
   color: #fff;
   height: 75px;
-  font: 150px / 20px Oswald, Helvetica;
+  font: 110px / 20px Oswald, Helvetica;
 }
 .prices-list__item--content > span {
   color: #a1a1a1;
   font-size: 25px;
   display: block;
-  margin-top: 15px;
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 .prices-list__item--content > b {
   color: #a1a1a1;
-  font-size: 30px;
+  font-size: 25px;
 }
 .prices-list__item--content {
   z-index: 3;
 
   display: flex;
   flex-direction: column;
-  transform: scale(0.725) rotate(315deg);
   align-items: center;
 }

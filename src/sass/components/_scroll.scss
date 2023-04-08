@@ -1,0 +1,48 @@
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 10px;
+  animation: scrollUp 1s ease-in-out infinite;
+  transform: rotate(135deg);
+}
+#scroll-to-top::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: 3;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  position: absolute;
+  inset: 5px;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#scroll-to-top > svg {
+  width: 35px;
+  height: 38px;
+  margin: 4px 0 0 1px;
+  transition: all 0.3s;
+}
+#scroll-to-top:hover::before {
+  transition: all 0.6s;
+  transform: translateY(-5px) translateX(-5px);
+  opacity: 1;
+}

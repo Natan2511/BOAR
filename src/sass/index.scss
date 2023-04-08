@@ -9,6 +9,8 @@
 @import './components/modal';
 @import './components/swiper';
 @import './components/container';
+@import './components/call_modal';
+@import './components/scroll';
 
 //                                  *layouts
 @import './layouts/header';
@@ -21,6 +23,8 @@
 @import './layouts/location';
 @import './layouts/our-prices';
 @import './layouts/schedule';
+@import './layouts/intro';
+@import './layouts/questions';
 
 //                                  *utils
 @import './utils/hidden';

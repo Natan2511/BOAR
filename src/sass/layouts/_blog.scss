@@ -1,0 +1,17 @@
+.blog {
+  text-align: center;
+  padding-top: 67px;
+  padding-bottom: 43px;
+}
+.blog > h2 {
+  font: 2.5rem/4rem Oswald, Helvetica;
+  text-transform: uppercase;
+}
+.blog__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog__wrapper > p {
+  color: #a1a1a1;
+}

@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="./font/OpenSans-Bold.ttf" />
     <link rel="stylesheet" href="./font/OpenSans-Regular.ttf" />
     <link rel="stylesheet" href="./font/Oswald-Regular.ttf" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -52,13 +49,14 @@
 
     <!-- *                       main                              -->
     <main>
-      <section class="intro"></section>
+      <section class="intro">
+    </section>
 
       <section class="graph">
         <div class="graph__wrapper container">
           <h2>РАБОЧИЕ ЧАСЫ</h2>
           <hr />
-          <div class="graph__times">
+          <div id="time" class="graph__times">
             <svg width="40" height="40">
               <use href="./images/symbol-defs.svg#icon-clock"></use>
             </svg>
@@ -94,7 +92,7 @@
             <li>Благодаря гибкому графику найдется время на очередной визит в клуб ради заряда позитива и энергии</li>
             <li>В широком выборе абонементов вы непременно подыщете вариант под собственный бюджет</li>
           </ul>
-          <p><a class="about-link" href="#location">Посмотрите на карту<a > – мы совсем рядом! Есть вопросы, как добраться в Risen Team? <a class="about-link" href="">Администратор охотно подскажет<a > удобный маршрут.</p>
+          <p><a class="about-link" href="#location">Посмотрите на карту<a > – мы совсем рядом! Есть вопросы, как добраться в Risen Team? <a style="cursor: pointer;" class="about-link" data-modal-open--one>Администратор охотно подскажет<a > удобный маршрут.</p>
         </div>
       </section>
 
@@ -129,7 +127,7 @@
             <div class="prices-list__item">
               <div class="prices-list__item--content">
                 <em>350</em>
-                <b style="margin-top: 25px">ИНДИВИДУАЛЬНЫЙ</b>
+                <b>ИНДИВИДУАЛЬНЫЙ</b>
               </div>
             </div>
           </div>
@@ -156,21 +154,95 @@
             <li>избавления от напряжения, стресса, негатива</li>
             <li>шлифовки техники и закрепления ранее освоенных упражнений</li>
           </ul>
-          <p style="margin-top: 10px;" >Бокс дарит яркие эмоции и драйв. В Risen Team для этого созданы все условия. <a class="about-link" href="">Не медли - запишись<a></p>
+          <p style="margin-top: 10px;" >Бокс дарит яркие эмоции и драйв. В Risen Team для этого созданы все условия. <a style="cursor: pointer;" class="about-link" data-modal-open--one>Не медли - запишись<a></p>
         </div>
       </section>
 
-      <section class="gallery" id="gallery"></section>
+      <section class="gallery " id="gallery">
+      </section>
 
       <section class="classes" id="classes"></section>
+     
+      <section class="blog" id="blog">
+        <div class="blog__wrapper container">
+          <h2>МЫ ЗНАЕМ, КАК ВЛЮБИТЬСЯ В КИКБОКСИНГ НАВСЕГДА</h2>
+          <hr />
+          <p>Учим любить трудности, которые закаляют тело, укрепляют психологическую стойкость и ведут к желаемым целям</p>
+          <p>Поддерживаем в процессе – гордитесь собой, хвалите себя за каждое занятие, за каждое упражнение</p>
+          <p>Улыбаемся! Пусть улыбка остается на лице, когда что-то не получается или силы на исходе. Улыбайтесь и получайте кайф от себя и от процесса тренировки</p>
+        </div>
+      </section>
 
-      <section class="blog" id="blog"></section>
+      <section class="questions container" id="questions">
+        <div class="questions--title">
+          <h2>Вопрос / Ответ</h2>
+          <p>Вы спрашиваете, мы отвечаем</p>
+        </div>
 
-      <section class="questions" id="questions"></section>
+        <div class="questions--content"> 
+          <b>Что понадобится на первом занятии?</b>
+          <br>
+          <span class="hidden">— Отличное настроение, удобная сменная одежда и обувь.</span>
+        </div>
+        <div class="questions--content"> 
+          <b >Девушки тренируются вместе с парнями или отдельно?</b>
+          <br>
+          <span class="hidden">— В нашем клубе отсутствует сегрегация, поэтому приглашаем в общие группы всех желающих. Вне зависимости от пола, тренер уделяет внимание уровню физической подготовки, индивидуально подбирая под него нагрузку.</span>
+        </div>
+        <div class="questions--content"> 
+          <b >С какого возраста и на каких условиях принимаете в клуб детей?</b>
+          <br>
+          <span class="hidden">— В Risen Team регулярно проходят детские тренировки. Они интересны и полезны для детей от 6 лет. Для занятий нужно оформить справку у вашего педиатра об отсутствии противопоказаний к физическим нагрузкам.</span>
+        </div>
+        <div class="questions--content"> 
+          <b >Есть ли у вас пробное занятие?</b>
+          <br>
+          <span class="hidden">— Конечно, и посетить его можно бесплатно. Выбирайте удобное время и записывайтесь у нашего администратора.</span>
+        </div>
+        <div class="questions--content"> 
+          <b >Бывают ли у вас скидки на абонементы?</b>
+          <br>
+          <span class="hidden">— Да, у нас постоянно действуют льготные условия студентам и школьникам. Если вы оформляете абонемент на более длительный срок, чем на месяц, мы тоже гарантируем снижение цены.</span>
+        </div>
+        <div class="questions--content"> 
+          <b >Как записаться?</b>
+          <br>
+          <span class="hidden">
+        <ul class="questions--content--list">— Выбирайте любой удобный способ:
+              <li class="questions--content--list__item"><a data-modal-open--one>Позвоните</a> по номерам, указанным на сайте</li>
+              <li class="questions--content--list__item"><a data-modal-open--one>Напишите</a> ваш номер телефона в форме для обратной связи, и администратор вам перезвонит</li>
+              <li class="questions--content--list__item"><a data-modal-open--one>Обращайтесь</a> к менеджеру для записи или с любыми другими вопросами посредством e-mail или через наши страницы в соцсетях</li>
+            </ul>
+          </span>
+        </div>
+      </section>
 
-      <section class="location" id="location"></section>
+      <section class="location" id="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.950428773402!2d36.229095715871104!3d49.993538828062235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f007c83ff9%3A0xdadb049c1820847c!2z0L_Quy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwgMjEsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1680955859696!5m2!1sru!2sua" width="100%" height="360px" style="border:0; padding-left: 15px; padding-right: 15px; -webkit-filter: grayscale(100%); filter: grayscale(100%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
 
-      <section class="schedule" id="schedule"></section>
+      <section class="schedule container" id="schedule">
+        <h2>КОНТАКТЫ - КЛИКАБЕЛЬНЫЕ</h2>
+        <ul class="schedule--list">
+          <li class="schedule--list__item">
+          <div class="schedule--list__item--bike">
+              <h2>Адрес</h2>
+              <svg id="bike" width="25" height="25">
+                <use href="./images/symbol-defs.svg#icon-bike"></use>
+              </svg>
+            </div>
+            <a class="schedule--list__item--link" target="_blank" href="https://goo.gl/maps/Zocxt921KjZeptgu5">пл.Конституции, 21, Харьков, 61000</a>
+          </li>
+          <li class="schedule--list__item">
+            <h2>Наш телефон</h2>
+            <a class="schedule--list__item--link" href="tel:00990990000">00990990000</a>
+          </li>
+          <li class="schedule--list__item">
+            <h2>E-MAIL</h2>
+            <a class="schedule--list__item--link" href="mailto:kaban@gmail.com">kaban@gmail.com</a>
+          </li>
+      </ul>
+      </section>
     </main>
 
     <!-- *                       footer                            -->
@@ -178,7 +250,7 @@
       <p>© LLC "BOAR TEAM" 2023. Все права защищены.</p>
     </footer>
 
-    <!-- *                       modal                                -->
+    <!-- *                       burger                            -->
     <div class="modal is is-hidden" data-modal>
       <div class="modal__content">
         <ul class="modal__list">
@@ -195,5 +267,20 @@
         ></button>
       </div>
     </div>
+
+    <!-- *                       modal                             -->
+    <div class="modal--one">
+      <div class="modal__content--one">
+        <button class="modal__close--one">&times;</button>
+        <p>Текст модального окна</p>
+      </div>
+    </div>
+    
+    <button id="scroll-to-top">
+      <svg class="scroll--svg" fill="white" >
+        <use href="./images/symbol-defs.svg#icon-arrow_top"></use>
+      </svg>
+    </button>
+
   </body>
 </html>
