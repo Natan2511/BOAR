@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./font/OpenSans-Bold.ttf" />
     <link rel="stylesheet" href="./font/OpenSans-Regular.ttf" />
     <link rel="stylesheet" href="./font/Oswald-Regular.ttf" />
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -50,7 +51,28 @@
     <!-- *                       main                              -->
     <main>
       <section class="intro">
-    </section>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/introOne.jpg" alt="">
+              <div class="intro--wrapper__text">
+                <p class="intro--wrapper__title">Как начать уже сегодня...</p>
+                <h2>Начинающим</h2>
+                <p class="intro--wrapper__text--content">Невозможно – это всего лишь громкое слово, за которым прячутся маленькие люди. Им проще жить в привычном мире, чем найти в себе силы что-то изменить. Невозможное - это не факт. Это только мнение. - <i> Мухаммед Али</i></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/introTwo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/introThre.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        
+      </section>
 
       <section class="graph">
         <div class="graph__wrapper container">
@@ -274,7 +296,7 @@
         <p>Наш телефоны</p>
         <a class="call--modal--tel" href="tel:00990990000">00990990000</a>
         <hr>
-        <p style="color:#f09898; font-size: 15px; text-align: center;">Первая тренировка - бесплатно!</p>
+        <p style="color: #4cff84;; font-size: 15px; text-align: center;">Первая тренировка - бесплатно!</p>
         <hr>
         <form class="call--modal__form" action="">
           <p>Обратная связь</p>
@@ -285,7 +307,8 @@
         <button class="call--modal__close">&times;</button>
       </div>
     </div>
-    
+
+    <!-- *                       scroll                            -->
     <button id="scroll-to-top">
       <svg class="scroll--svg" fill="white" >
         <use href="./images/symbol-defs.svg#icon-arrow_top"></use>

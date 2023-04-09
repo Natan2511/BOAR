@@ -1,3 +1,27 @@
-.intro {
-
+.intro--wrapper__text {
+  position: absolute;
+  z-index: 10;
+  color: #fff;
+  overflow: hidden;
+  width: 560px;
+  float: left;
+  font-size: 16px;
+  text-align: left;
+}
+.intro--wrapper__text > h2 {
+  font: 45px / 66px Oswald, Helvetica;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  margin: -4px 0 6px;
+}
+.intro--wrapper__text--content {
+}
+.intro--wrapper__title {
+  font: 22px/30px Oswald, Helvetica;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }

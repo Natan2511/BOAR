@@ -3,3 +3,4 @@ import './js/call';
 import './js/list';
 import './js/scroll';
 import './js/lang';
+import './js/swiper';
