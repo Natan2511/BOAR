@@ -3,31 +3,112 @@
   z-index: 10;
   color: #fff;
   overflow: hidden;
-  width: 560px;
-  float: left;
   font-size: 16px;
   text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-.intro--wrapper__text > h2 {
+.intro--wrapper__content > h2 {
   font: 45px / 66px Oswald, Helvetica;
   color: #fff;
   text-transform: uppercase;
   display: block;
-  margin: -4px 0 6px;
-}
-.intro--wrapper__text--content {
 }
 .intro--wrapper__title {
-  font: 22px/30px Oswald, Helvetica;
+  font: 20px/30px Oswald, Helvetica;
   color: #fff;
   text-transform: uppercase;
   display: block;
   letter-spacing: 1px;
   opacity: 0.8;
 }
+
 .intro--wrapper--icon {
   color: white;
 }
 
 .intro--wrapper--icon---use {
+}
+
+.into__romb {
+  width: 80px;
+  height: 80px;
+  background-color: #b71c1c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font: 600 16px Oswald, Helvetica;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+.into__romb::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: 3;
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+  position: absolute;
+  inset: 5px;
+}
+.into__romb:hover::before {
+  transition: all 0.6s;
+  transform: translateY(-5px) translateX(-5px);
+  opacity: 1;
+}
+.into__romb--mini {
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
+  background-color: #888788;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font: 600 16px Oswald, Helvetica;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+.into__romb--mini::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: 3;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  inset: 5px;
+}
+.into__romb--mini:hover::before {
+  transition: all 0.6s;
+  transform: translateY(-5px) translateX(-5px);
+  opacity: 1;
+}
+
+.intro--wrapper__content {
+  max-width: 580px;
+}
+.intro__romb--wrapper {
+  justify-content: center;
+  display: flex;
+}
+.romb--wrapper__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.romb--wrapper__cont--mini {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
 }
