@@ -391,12 +391,14 @@
         <hr>
         <p style="color: #4cff84;; font-size: 15px; text-align: center;">Первая тренировка - бесплатно!</p>
         <hr>
-        <form class="call--modal__form" action="">
+
+        <form class="call--modal__form" action="send.php" method="POST">
           <p>Обратная связь</p>
-          <input class="call--modal__form--input" type="text" name="name" maxlength="32" minlength="3" placeholder="Ваше Имя">
-          <input class="call--modal__form--input" type="tel" name="phone" value="  +380" maxlength="19" required="" minlength="19" placeholder="Укажите ваш телефон">
+          <input class="call--modal__form--input" type="text" name="name" maxlength="32" minlength="3" placeholder="Ваше Имя" required>
+          <input class="call--modal__form--input" type="tel" name="phone" value="+380" maxlength="19" minlength="5" placeholder="Укажите ваш телефон" required>
+          <button class="call--btn__send">Перезвоните мне</button>
         </form>
-        <button class="call--btn__send">Перезвоните мне</button>
+
         <button class="call--modal__close">&times;</button>
       </div>
     </div>
