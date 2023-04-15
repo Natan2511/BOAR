@@ -35,3 +35,13 @@
 .modal__list > li > a:hover {
   color: #b71c1c;
 }
+.modal__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.modal__icons--item:hover {
+  fill: #b71c1c;
+}
