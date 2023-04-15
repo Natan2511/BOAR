@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -50,7 +53,7 @@
 
     <!-- *                       main                              -->
     <main>
-      <section class="intro">
+      <section class="intro" >
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
 
@@ -58,7 +61,7 @@
               <div class="swiper-slide__image">
                 <img src="./images/mainback.webp" alt="">
               </div>
-              <img src="./images/introOne.webp" alt="">
+              <img class="swiper--gallery__slider" src="./images/introOne.webp" alt="">
               <div class="intro--wrapper__text container">
                 
                 <div class="intro--wrapper__content">
@@ -95,11 +98,11 @@
               </div>
             </div>
 
-            <div class="swiper-slide ">
+            <div class="swiper-slide">
               <div class="swiper-slide__image">
                 <img src="./images/mainback.webp" alt="">
               </div>
-              <img src="./images/introTwo.webp" alt="">
+              <img class="swiper--gallery__slider" src="./images/introTwo.webp" alt="">
               <div class="intro--wrapper__text container">
                 
                 <div class="intro--wrapper__content">
@@ -134,11 +137,11 @@
               </div>
             </div>
 
-            <div class="swiper-slide ">
+            <div class="swiper-slide">
               <div class="swiper-slide__image">
                 <img src="./images/mainback.webp" alt="">
               </div>
-              <img src="./images/introThree.webp" alt="">
+              <img class="swiper--gallery__slider" src="./images/introThree.webp" alt="">
               <div class="intro--wrapper__text container">
                 
                 <div class="intro--wrapper__content">
@@ -291,7 +294,60 @@
         </div>
       </section>
 
-      <section class="gallery " id="gallery">
+      <section class="gallery container" id="gallery">
+        <h2>ФОТОГАЛЕРЕЯ</h2>
+        <p>Интерьер, клиенты и рабочий процесс</p>
+        <div class="swiper swiperGallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide swiper--gallery__img">
+              <a class="swiper--img" href="./images/introOne.webp" data-lightbox="gallery">
+                <img src="./images/introOne.webp" alt="">
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
 
       <section class="classes" id="classes"></section>
@@ -425,7 +481,7 @@
 
     <!-- *                       scroll to top                     -->
     <button id="scroll-to-top">
-      <svg width="48" height="38" class="scroll--svg" fill="white" >
+      <svg width="35" height="38" class="scroll--svg" fill="white" >
         <use href="./images/symbol-defs.svg#icon-arrow_top"></use>
       </svg>
     </button>

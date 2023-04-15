@@ -12,9 +12,12 @@
 }
 .swiper-slide img {
   display: block;
-  height: 100vh;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
+}
+.swiper--gallery__slider {
+  height: 100vh;
 }
 
 .swiper-button-prev,
