@@ -55,6 +55,10 @@
 }
 .call--modal__form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .call--modal__form--input {
   background-color: #000;

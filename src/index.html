@@ -391,14 +391,12 @@
         <hr>
         <p style="color: #4cff84;; font-size: 15px; text-align: center;">Первая тренировка - бесплатно!</p>
         <hr>
-
-        <form class="call--modal__form" action="send.php" method="POST">
+        <form class="call--modal__form" action="https://formspree.io/f/mrgvodld" method="POST">
           <p>Обратная связь</p>
           <input class="call--modal__form--input" type="text" name="name" maxlength="32" minlength="3" placeholder="Ваше Имя" required>
-          <input class="call--modal__form--input" type="tel" name="phone" value="+380" maxlength="19" minlength="5" placeholder="Укажите ваш телефон" required>
-          <button class="call--btn__send">Перезвоните мне</button>
+          <input class="call--modal__form--input" type="tel" name="tel" value="+380" maxlength="19" minlength="10" placeholder="Укажите ваш телефон" required>
+          <button class="call--btn__send" type="submit">Перезвоните мне</button>
         </form>
-
         <button class="call--modal__close">&times;</button>
       </div>
     </div>
