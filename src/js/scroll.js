@@ -1,3 +1,4 @@
+//*                            scroll to top
 window.onscroll = function () {
   scrollFunction();
 };
@@ -14,10 +15,10 @@ function scrollFunction() {
 }
 
 document.getElementById('scroll-to-top').onclick = function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.documentElement.scrollIntoView({ behavior: 'smooth' });
 };
 
+//*                            animation bike
 function handleScroll() {
   var bike = document.getElementById('bike');
   var rect = bike.getBoundingClientRect();
@@ -33,6 +34,7 @@ function handleScroll() {
 
 document.addEventListener('scroll', handleScroll);
 
+//*                            animation price
 function animateOnScroll() {
   var pricesListItems = document.querySelectorAll('.prices-list__item');
   var windowHeight = window.innerHeight;
