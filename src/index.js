@@ -5,3 +5,5 @@ import './js/scroll';
 import './js/lang';
 import './js/swiper';
 import './js/swiper_gallery';
+import './js/swiper_classes';
+import './js/scroll_anim';

@@ -42,9 +42,14 @@
         </section>
 
         <section>
-          <button type="button" class="btn--header" data-modal-open>
+          <button type="button" class="btn--header--open" data-modal-open id="open-menu">
             <svg width="25" height="28" fill="gray">
               <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <button type="button" class="btn--header--close" data-modal-close id="close-menu">
+            <svg width="25" height="28" fill="gray">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
         </section>
@@ -62,7 +67,7 @@
                 <img src="./images/mainback.webp" alt="">
               </div>
               <img class="swiper--gallery__slider" src="./images/introOne.webp" alt="">
-              <div class="intro--wrapper__text container">
+              <div class="intro--wrapper__text container intro-slide">
                 
                 <div class="intro--wrapper__content">
                   <p class="intro--wrapper__title">Как начать уже сегодня...</p>
@@ -185,7 +190,6 @@
             </svg>
           </a>
         </div>
-        
       </section>
 
       <section class="graph">
@@ -276,7 +280,7 @@
           <hr />
           <ul class="about__list">
             <p style="margin-bottom: 10px;">
-              Клуб бокса для детей и взрослых от новичков до настоящих мастеров ринга, которые не знают предела совершенству
+              Клуб Кикбоксинга для детей и взрослых от новичков до настоящих мастеров ринга, которые не знают предела совершенству
             </p>
             <p>
               Приглашаем на тренировку:
@@ -290,7 +294,7 @@
             <li>избавления от напряжения, стресса, негатива</li>
             <li>шлифовки техники и закрепления ранее освоенных упражнений</li>
           </ul>
-          <p style="margin-top: 10px;" >Бокс дарит яркие эмоции и драйв. В Risen Team для этого созданы все условия. <a style="cursor: pointer;" class="about-link" call--modal__open>Не медли - запишись<a></p>
+          <p style="margin-top: 10px;" >Кикбоксинг дарит яркие эмоции и драйв. В Risen Team для этого созданы все условия. <a style="cursor: pointer;" class="about-link" call--modal__open>Не медли - запишись<a></p>
         </div>
       </section>
 
@@ -345,12 +349,52 @@
               </a>
             </div>
           </div>
-          <hr>
           <div class="swiper-pagination"></div>
         </div>
       </section>
 
-      <section class="classes" id="classes"></section>
+      <section class="classes " id="classes">
+        <div class="swiper mySwiperClasses container">
+          <div class="swiper-wrapper classes__container">
+            <div class="swiper-slide swiper-slide__classes">
+              <div class="classes__wrapper">
+                <div class="classes__right">
+                  <h2 class="classes--title">Груповые занятия</h2>
+                  <p class="classes__list--item">Присутствие единомышленников – крутая мотивация. Глядя на других, невольно хочется стать лучше и сильнее!</p>
+                  <p class="classes__list--item">Именно в группе участники переживают самые яркие эмоции, избавляясь от стресса, охваченные общим приподнятым настроением</p>
+                  <p class="classes__list--item">Благодаря максимальной концентрации и продуктивности быстрее исчезают лишние сантиметры, а силуэт обретает желаемые очертания</p>
+                  <p class="classes__list--item">Занятия кикбоксингом в группе – это новые знакомства в веселой драйвовой атмосфере</p>
+                  <p class="classes__list--item">Групповые тренировки состоят из отработки нужных движений, работы со спортивным инвентарем и комплекса упражнений для общей физической подготовки. Интересуют подробности?</p>
+                  <a class="classes--link" call--modal__open>Администратор ответит на вопросы.</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide__classes">
+              <div class="classes__wrapper">
+                <h2 class="classes--title">Детские группы</h2>
+                <p class="classes__list--item">Спортивная подготовка организована с учетом детской психологии. У нас интересно заниматься детям с 6-летнего возраста. Тренер внимательно следит за каждым воспитанником, способствуя всестороннему развитию</p>
+                <p class="classes__list--item">Задействованы все группы мышц, благодаря чему формируется здоровая и красивая осанка</p>
+                <p class="classes__list--item">Спорт полезен дыхательной, сердечно-сосудистой, нервной системам</p>
+                <p class="classes__list--item">Обучаясь самозащите, дети обретают целеустремленность, выносливость, волю к победе</p>
+                <p class="classes__list--item">Кикбоксинг дисциплинирует, учить овладевать собственными эмоциями, стойко принимать поражения</p>
+                <a class="classes--link" call--modal__open>Администратор ответит на вопросы.</a>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide__classes">
+              <div class="classes__wrapper">
+                <h2 class="classes--title">Индивидуальные занятия</h2>
+                <p class="classes__list--item">План разрабатывается с учетом индивидуальных особенностей для достижения цели в кратчайшие сроки и с обеспечением максимальной безопасности</p>
+                <p class="classes__list--item">Тренер концентрируется только на вас лично, моментально реагирует на технические ошибки, чтобы вы могли отшлифовать каждое движение</p>
+                <p class="classes__list--item">Это путь к формированию личного стиля, собственной оригинальной разнообразной и непредсказуемой техники </p>
+                <p class="classes__list--item"><a class="classes--link" href="#location">Приезжайте в BOAR Team</a>, чтобы познакомиться с тренерами – мастерами своего дела, и выбрать преподавателя по душе!</p>
+                <p style="padding-top: 20px;" class="classes__list--item">Остались вопросы? <a class="classes--link" call--modal__open>Кликай!</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-button-next-classes"></div>
+          <div class="swiper-button-prev swiper-button-prev-classes"></div>
+        </div>
+      </section>
      
       <section class="blog" id="blog">
         <div class="blog__wrapper container">
@@ -454,11 +498,6 @@
           <a target="_blank" href="https://instagram.com/igor.kavyrshin?igshid=YmMyMTA2M2Y="><svg class="modal__icons--item" fill="white" width="20" height="20"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a>
           <a target="_blank" href="https://goo.gl/maps/jcLbmkkwrtqYZHM69"><svg class="modal__icons--item" fill="white" width="20" height="20"><use href="./images/symbol-defs.svg#icon-location"></use></svg></a>
        </div>
-        <button
-          class="modal__close-btn"
-          type="button"
-          data-modal-close
-        ></button>
       </div>
     </div>
 
@@ -483,6 +522,13 @@
     <button id="scroll-to-top">
       <svg width="35" height="38" class="scroll--svg" fill="white" >
         <use href="./images/symbol-defs.svg#icon-arrow_top"></use>
+      </svg>
+    </button>
+
+    <!-- *                       button call                        -->
+    <button class="button-call" call--modal__open>
+      <svg width="25" height="25" class="scroll--svg" fill="white" >
+        <use href="./images/symbol-defs.svg#icon-phone"></use>
       </svg>
     </button>
   </body>

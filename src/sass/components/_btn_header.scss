@@ -1,4 +1,9 @@
-.btn--header {
+.btn--header--open {
+  border: 0;
+  background-color: transparent;
+}
+.btn--header--close {
+  display: none;
   border: 0;
   background-color: transparent;
 }

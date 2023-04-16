@@ -29,6 +29,10 @@
     top: 80%;
   }
 }
+.swiper-button-next-classes,
+.swiper-button-prev-classes {
+  top: var(--swiper-navigation-top-offset, 50%);
+}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 30px;

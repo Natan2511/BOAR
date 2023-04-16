@@ -1,0 +1,53 @@
+.classes {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  background: url(..//..//images/50_5_IMG_4753.png) center no-repeat;
+  position: relative;
+  margin-top: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  @media (max-width: 479px) {
+    padding-bottom: 20px;
+  }
+}
+.swiper-button-next-classes,
+.swiper-button-prev-classes {
+  color: white;
+}
+.classes__wrapper {
+  display: flex;
+  width: 70%;
+  @media (max-width: 479px) {
+    width: 100%;
+  }
+  flex-direction: column;
+}
+.classes--title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.classes__list--item {
+  font: 400 14px/26px 'Open Sans', Helvetica, sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.classes--link {
+  cursor: pointer;
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+  font: 400 14px/26px 'Open Sans', Helvetica, sans-serif;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b71c1c;
+}
+
+.classes__right {
+  text-align: center;
+}
+.swiper-slide__classes {
+  display: flex;
+}

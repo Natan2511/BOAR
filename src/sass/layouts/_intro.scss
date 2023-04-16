@@ -129,3 +129,19 @@
   display: flex;
   justify-content: center;
 }
+.intro-slide {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.intro-slide.visible {
+  opacity: 1;
+}
+
+.intro-slide.in-view {
+  opacity: 1;
+}
+
+.intro-slide.out-of-view {
+  opacity: 0;
+}
