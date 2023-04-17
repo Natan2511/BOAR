@@ -1,4 +1,4 @@
-const modalOpenButtons = document.querySelectorAll('[call--modal__open]');
+const modalOpenButtons = document.querySelectorAll('.call--modal__open');
 const modal = document.querySelector('.call--modal');
 
 modalOpenButtons.forEach(button => {
