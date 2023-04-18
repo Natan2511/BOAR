@@ -20,10 +20,11 @@
 }
 .swiper--gallery__img > img {
   width: 100%;
-  height: 235px;
 }
 .swiper--img {
   position: relative;
+  width: 370px;
+  height: 235px;
 }
 .swiper--img:hover:before {
   background: rgba(33, 33, 33, 0.7);
