@@ -1,4 +1,4 @@
-//*                            scroll to top
+//!                            scroll to top
 window.onscroll = function () {
   scrollFunction();
 };
@@ -18,11 +18,15 @@ document.getElementById('scroll-to-top').onclick = function () {
   document.documentElement.scrollIntoView({ behavior: 'smooth' });
 };
 
-//*                            animation bike
+//!                            scroll to up
+
+const scrollToUp = document.getElementById('scroll-to-up');
+
+//!                            animation bike
 function handleScroll() {
-  var bike = document.getElementById('bike');
-  var rect = bike.getBoundingClientRect();
-  var viewHeight = Math.max(
+  let bike = document.getElementById('bike');
+  let rect = bike.getBoundingClientRect();
+  let viewHeight = Math.max(
     document.documentElement.clientHeight,
     window.innerHeight
   );
@@ -34,13 +38,13 @@ function handleScroll() {
 
 document.addEventListener('scroll', handleScroll);
 
-//*                            animation price
+//!                            animation price
 function animateOnScroll() {
-  var pricesListItems = document.querySelectorAll('.prices-list__item');
-  var windowHeight = window.innerHeight;
+  let pricesListItems = document.querySelectorAll('.prices-list__item');
+  let windowHeight = window.innerHeight;
 
-  for (var i = 0; i < pricesListItems.length; i++) {
-    var elementTop = pricesListItems[i].getBoundingClientRect().top;
+  for (let i = 0; i < pricesListItems.length; i++) {
+    let elementTop = pricesListItems[i].getBoundingClientRect().top;
 
     if (elementTop < windowHeight - 50) {
       pricesListItems[i].style.opacity = 1;

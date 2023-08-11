@@ -22,7 +22,7 @@
     "lightbox2": "^2.11.4",
     "modern-normalize": "^1.1.0",
     "scrollmagic": "^2.0.8",
-    "swiper": "^9.2.2",
+    "swiper": "^9.4.1",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {

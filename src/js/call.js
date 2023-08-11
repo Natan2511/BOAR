@@ -1,5 +1,6 @@
 const modalOpenButtons = document.querySelectorAll('.call--modal__open');
 const modal = document.querySelector('.call--modal');
+const form = document.querySelector('.call--modal__form');
 
 modalOpenButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -29,9 +30,22 @@ modal.addEventListener('touchstart', event => {
   }
 });
 
-// Закрытие модального окна при клике за его границами
 window.addEventListener('click', event => {
   if (event.target == modal) {
     modal.style.display = 'none';
   }
 });
+
+// form.addEventListener('submit', handlerSubmit);
+
+// function handlerSubmit(e) {
+//   const { name, tel } = e.target;
+
+//   const message = {
+//     name: name.value,
+//     tel: tel.value,
+//   };
+
+//   closeModal();
+//   form.reset();
+// }
