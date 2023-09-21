@@ -1,10 +1,9 @@
 const questions = document.querySelectorAll('.questions--content');
 
 questions.forEach(question => {
-  const b = question.querySelector('b');
   const span = question.querySelector('span');
 
-  b.addEventListener('click', () => {
+  question.addEventListener('click', e => {
     if (span.classList.contains('hidden')) {
       span.classList.remove('hidden');
     } else {

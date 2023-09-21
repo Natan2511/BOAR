@@ -1,3 +1,5 @@
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 const modalOpenButtons = document.querySelectorAll('.call--modal__open');
 const modal = document.querySelector('.call--modal');
 const form = document.querySelector('.call--modal__form');
@@ -36,16 +38,12 @@ window.addEventListener('click', event => {
   }
 });
 
-// form.addEventListener('submit', handlerSubmit);
+form.addEventListener('submit', handlerSubmit);
 
-// function handlerSubmit(e) {
-//   const { name, tel } = e.target;
+function handlerSubmit(e) {
+  e.preventDefault();
 
-//   const message = {
-//     name: name.value,
-//     tel: tel.value,
-//   };
-
-//   closeModal();
-//   form.reset();
-// }
+  form.reset();
+  closeModal();
+  Notify.success('Спасибо, мы Вам обязательно перезвоним');
+}
